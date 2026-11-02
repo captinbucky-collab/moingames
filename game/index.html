@@ -1,0 +1,35 @@
+!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHISHTI BRO | Pakistan Open World</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading"><div class="brand">CHISHTI <span>BRO</span></div><p>GENERATING PAKISTAN CITY...</p><div class="loadbar"><i></i></div></div>
+<div id="game">
+  <header class="topbar">
+    <div class="brand small">CB <span>OPEN WORLD</span></div>
+    <div class="location">📍 PAKISTAN · NEW ISLAMABAD DISTRICT</div>
+    <button id="pauseBtn">Ⅱ PAUSE</button>
+  </header>
+  <section class="hud">
+    <div class="stat"><small>HEALTH</small><b id="health">100</b><div class="meter"><i id="healthbar"></i></div></div>
+    <div class="stat"><small>CASH</small><b id="cash">₨ 2,500</b></div>
+    <div class="stat"><small>MISSION</small><b id="mission">01 / CITY EXPLORER</b></div>
+  </section>
+  <div id="crosshair">+</div>
+  <div class="bottom-left">
+    <div id="map"><canvas id="mapCanvas" width="170" height="170"></canvas><span>MINI MAP</span></div>
+    <div class="hint" id="hint">WASD MOVE · E ENTER CAR · SHIFT SPRINT</div>
+  </div>
+  <div class="bottom-right">
+    <div class="speed"><strong id="speed">0</strong><small>KM/H</small></div>
+    <div class="gear" id="mode">ON FOOT</div>
+  </div>
+  <div id="missionToast">MISSION STARTED: EXPLORE THE CITY</div>
+  <div id="pause" class="overlay hidden"><div class="panel"><div class="brand">CHISHTI <span>BRO</span></div><h2>GAME PAUSED</h2><p>Take a break, driver.</p><button id="resumeBtn">RESUME GAME</button><p class="controls">WASD Move · Mouse Look · E Enter/Exit · Shift Sprint · Space Handbrake</p></div></div>
+  <div id="missionDone" class="overlay hidden"><div class="panel"><h2>MISSION COMPLETE!</h2><p>Great driving. Reward added to your wallet.</p><button id="continueBtn">CONTINUE</button></div></div>
+</div>
+<script type="module" src="game.js"></script>
+</body></html>
